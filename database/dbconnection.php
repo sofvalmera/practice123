@@ -3,7 +3,7 @@
 class Dbconnection {
     public $conn;
 
-    public function init() {
+    public function __construct() {
         $this->conn = new mysqli('localhost', 'root', '', 'tryanderror');
     }
 
@@ -11,9 +11,9 @@ class Dbconnection {
     //     return $this->conn;
     // }
 
-    public function createDb($dbname) {
-        $this->conn = new mysqli('localhost', 'root', '');
-        $this->conn->query("CREATE DATABASE IF NOT EXISTS $dbname");
-    }
+    // public function createDb($dbname) {
+    //     $this->conn = new mysqli('localhost', 'root', '');
+    //     $this->conn->query("CREATE DATABASE IF NOT EXISTS $dbname");
+    // }
 }
 ?>

@@ -1,8 +1,8 @@
 <?php
 
-include_once 'dbconnection.php';
+// include_once 'dbconnection.php';
 
-$newdb = new Dbconnection();
-$newdb->createDb('tryanderror');
+// $newdb = new Dbconnection();
+// $newdb->createDb('tryanderror');
 
 ?>
