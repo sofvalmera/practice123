@@ -17,15 +17,13 @@ class UserController {
         return $this->userModel->getAllUsers();
     }
 
-    public function searchusers(array $search) {
+    public function searchusers(string $search) {
         return $this->userModel->searchusers($search);
     }
+    public function delete($delete) {
+        return $this->userModel->delete($delete);
+    }
 
-    public function deleteuser($id) {
-        return $this->userModel->deleteUser($id);
-    }
-    public function updateuser($field, $value, $userId) {
-        return $this->userModel->updateUser($field, $value, $userId);
-    }
+    
 }
 ?>

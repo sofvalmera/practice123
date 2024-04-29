@@ -3,8 +3,8 @@
 include_once (__DIR__ . '/../controller/usercontroller.php');
 header('Content-Type: application/json');
 
-// $search = $_GET;
+$search = 'so';
 $searchusers = new UserController();
-$searchdata = $searchusers->searchusers($_GET);
+$searchdata = $searchusers->searchusers($search);
 echo json_encode($searchdata);
 ?>
